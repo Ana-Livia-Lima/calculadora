@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+    <!-- Criando o cabeçalho de maeta dados -->
+    <head>
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <!-- Conteúdo visual da página -->
+    <body>
+        
+        <!-- Criando a calculadora -->
+        <div class="calculator">
+            
+            <!-- Criando o display (tela) da calculadora -->
+         <input type="text" id="display" disabled>
+         
+            <!-- Botões da calculadora -->
+            <div class="buttons">
+                
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="appndSymbol('/')">÷</button>
+                <button onclick="appndSymbol('*')">x</button>
+                <button onclick="deleteLast()">←</button>
+        
+                <button onclick="appndSymbol('7')">7</button>
+                <button onclick="appndSymbol('8')">8</button>
+                <button onclick="appndSymbol('9')">9</button>
+                <button onclick="appndSymbol('-')">-</button>
+        
+                <button onclick="appndSymbol('4')">4</button>
+                <button onclick="appndSymbol('5')">5</button>
+                <button onclick="appndSymbol('6')">6</button>
+                <button onclick="appndSymbol('+')">+</button>
+        
+                <button onclick="appndSymbol('1')">1</button>
+                <button onclick="appndSymbol('2')">2</button>
+                <button onclick="appndSymbol('3')">3</button>
+                <button onclick="calculate()">=</button>
+        
+                <button onclick="appndSymbol('0')" class= "zero">0</button>
+                <button onclick="appndSymbol('.')">.</button>
+                
+            </div>
+        </div>
+        
+        <!-- Carregamento do arquivo JavaScript -->
+        <script src="script.js"></script>
+        
+    </body>
+</html>
